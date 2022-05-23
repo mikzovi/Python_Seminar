@@ -54,14 +54,32 @@
 # Задача 4. Задайте список. Напишите программу, которая определит, присутствует ли в заданном списке строк некое число
 # ['geek', 'brains4', '5five', 3friends']
 
-def in_spisok(chislo, spisok):
-    for i in spisok:
-        if str(chislo) in i:
-            return True
-    return False
+# def in_spisok(chislo, spisok):
+#     for i in spisok:
+#         if str(chislo) in i:
+#             return True
+#     return False
 
-spissok = ['geek', 'brains4', '5five', '3friends']
-chislo = 4
+# spissok = ['geek', 'brains4', '5five', '3friends']
+# chislo = 4
 
-for i in range (0, 20):
-    print(f'Число {i} {in_spisok(i, spissok)}')
+# for i in range (0, 20):
+#     print(f'Число {i} {in_spisok(i, spissok)}')
+
+
+# 2520 - самое маленькое число, которое делится без остатка на все числа от 1 до 10.
+# Какое самое маленькое число делится нацело на все числа от 1 до 20?
+
+def Delitsyali(n):
+    for i in range(1,11):
+        if n % i != 0:
+            return False
+    return True
+
+x = 20
+b = False
+while not b:
+    x += 10
+    b = Delitsyali(x)
+    print(f'{x} {b}')
+print(x)

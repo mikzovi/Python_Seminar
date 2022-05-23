@@ -21,6 +21,7 @@
 
 # print (random(50, 60))
 
+
 # Задача 1. Реализуйте алгоритм перемешивания списка.
 
 
@@ -36,6 +37,7 @@
 
 # print(new_spisok)
 
+
 # Задача 3. Задайте список из n чисел последовательности (1+1/n)**n и выведите на экран их сумму.
 
 # n = 15
@@ -47,6 +49,7 @@
 
 # print(posl)
 # print(sum)
+
 
 # Задача 4. Задайте список. Напишите программу, которая определит, присутствует ли в заданном списке строк некое число
 # ['geek', 'brains4', '5five', 3friends']
@@ -60,5 +63,5 @@ def in_spisok(chislo, spisok):
 spissok = ['geek', 'brains4', '5five', '3friends']
 chislo = 4
 
-print(in_spisok(4, spissok))
-print(in_spisok(2, spissok))
+for i in range (0, 20):
+    print(f'Число {i} {in_spisok(i, spissok)}')

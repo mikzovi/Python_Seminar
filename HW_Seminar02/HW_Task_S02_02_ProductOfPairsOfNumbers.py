@@ -4,7 +4,6 @@
 
 origin_list = [2, 3, 4, 5, 6]
 
-
 def product_of_pairs(current_list):
     num_pairs = len(current_list)//2 + len(current_list) % 2
     product_list = []

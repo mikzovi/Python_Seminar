@@ -1,7 +1,7 @@
 # 1.	Найти сумму чисел списка стоящих на нечетной позиции
 # Пример:[1,2,3,4] -> 4
 
-spisok = [1,2,3,4]
+origin_list = [1,2,3,4]
 
 def sum_odd_index(current_list):
     length_current_list = len(current_list)
@@ -10,5 +10,5 @@ def sum_odd_index(current_list):
         sum += current_list[i]
     return sum
 
-print(f'Сумма чисел списка {spisok}, стоящих на нечетной позиции: {sum_odd_index(spisok)}')
+print(f'Сумма чисел списка {origin_list}, стоящих на нечетной позиции: {sum_odd_index(origin_list)}')
 

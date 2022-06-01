@@ -1,5 +1,6 @@
 # 3. Составить список простых множителей натурального числа N
 
+
 def list_prime_multipliers(current_number):
     list_prime = []
     devider = 2

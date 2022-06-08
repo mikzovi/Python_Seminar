@@ -15,23 +15,23 @@ import os
 
 #def filter_text(file_path: str) -> None:
 def filter_text(origin_text, read_normal_text):
-    filler_words = ['короче говоря', 'короче', 'кстати', 'эээээ', 'ээээ', 'эээ', 'кажется', 'ясен пень', 'в общем', 'ну', 'как бы']
+    junk_words = ['короче говоря', 'короче', 'кстати', 'эээээ', 'ээээ', 'эээ', 'кажется', 'ясен пень', 'в общем', 'ну', 'как бы']
 
     with open(origin_text, "r", encoding='utf-8') as file:
         text = file.read().lower()
         #print(test_line)
-        for filler_word in filler_words:
-            text = text.replace(', ' + filler_word + '...', '')
-        for filler_word in filler_words:
-            text = text.replace(', ' + filler_word, '')
-        for filler_word in filler_words:
-            text = text.replace(filler_word + ', ', '')
-        for filler_word in filler_words:
-            text = text.replace(filler_word + '...', '')
-        for filler_word in filler_words:
-            text = text.replace(' ' + filler_word, '')
-        for filler_word in filler_words:
-            text = text.replace(filler_word, '')
+        for junk_word in junk_words:
+            text = text.replace(', ' + junk_word + '...', '')
+        for junk_word in junk_words:
+            text = text.replace(', ' + junk_word, '')
+        for junk_word in junk_words:
+            text = text.replace(junk_word + ', ', '')
+        for junk_word in junk_words:
+            text = text.replace(junk_word + '...', '')
+        for junk_word in junk_words:
+            text = text.replace(' ' + junk_word, '')
+        for junk_word in junk_words:
+            text = text.replace(junk_word, '')
 
     while text[1] == ',' or text[1] == ' ' or text[1] == '...':
         text = text[1:]
